@@ -3,27 +3,23 @@ body {
   overflow: hidden;
 }
 
-h1 {
-  color: red;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #fff;
-  width: 30%;
-  border-radius: 5px;
-  margin: 40px auto;
-  letter-spacing: 7px;
-  /* position: absolute; */
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
-}
+
 
 #clock {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
-  width: 30%;
-  height: 60vh;
+  width: 40%;
+  height: 80vh;
+  box-shadow: 3px 3px 20px black;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
   background-color: beige;
   color: black;
   text-align: center;
@@ -44,9 +40,12 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
-    width: 40%;
+   width: 80%;
     height: 60vh;
+    box-shadow: 3px 3px 20px black;
+    background-color: #ffff;
+    border-radius: 20px;
+    margin: 60px auto;
     background-color: beige;
     color: black;
     text-align: center;
