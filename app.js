@@ -3,8 +3,30 @@ function clock() {
   let hours = now.getHours();
   let minutes = now.getMinutes();
   let seconds = now.getSeconds();
+  let date = now.getDate();
+  let month = now.getMonth() + 1;
+  let year = now.getFullYear();
+  let day = now.getDay();
   let period = "AM";
 
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let shortDays = [];
+
+  for (let i = 0; i < days.length; i++) {
+    if (days[i].length > 3) {
+      shortDays.push(days[i].slice(0, 3));
+    }
+  }
+  console.log(shortDays);
   if (hours >= 12) {
     period = "PM";
   }
@@ -31,9 +53,15 @@ function clock() {
   } else {
     seconds = seconds;
   }
+  console.log(day);
 
-  let time = `${hours}: ${minutes}: ${seconds}: ${period}`;
-  document.querySelector("#clock").textContent = time;
+  let time = `${hours}: ${minutes}: ${seconds}: ${period}`
+ let dayDate =  `${shortDays[day]}/${date}/ ${month}/ ${year}`
+ let dev = "Developed by AMC Tech";
+
+ document.querySelector("h3").innerHTML=time
+  document.querySelector("#para1").innerHTML = dayDate;
+  document.querySelector("#para2").innerHTML = dev;
 }
 
 clock();
