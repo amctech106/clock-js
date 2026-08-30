@@ -13,10 +13,19 @@ h3{
 }
 
 #clock {
-  margin: 50px auto;
-  width: 30%;
-  height: 60vh;
-  background-color: beige;
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 80vh;
+  box-shadow: 3px 3px 20px black;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 60px auto;
+  flex-direction: column;
+  gap: 15px;
+}
   color: black;
   text-align: center;
   border-radius: 15px;
@@ -34,11 +43,16 @@ h3{
     height: auto;
   }
   #clock {
-    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    height: 50vh;
+    height: 60vh;
+    box-shadow: 3px 3px 20px black;
+    background-color: #ffff;
+    border-radius: 20px;
+    margin: 60px auto;
     line-height: 50px;
-    /* background-color: beige; */
     color: black;
     text-align: center;
     border-radius: 15px;
