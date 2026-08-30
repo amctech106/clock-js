@@ -26,7 +26,7 @@ function clock() {
       shortDays.push(days[i].slice(0, 3));
     }
   }
-  console.log(shortDays);
+
   if (hours >= 12) {
     period = "PM";
   }
@@ -53,7 +53,7 @@ function clock() {
   } else {
     seconds = seconds;
   }
-  console.log(day);
+
 
   let time = `${hours}: ${minutes}: ${seconds}: ${period}`;
   let dayDate = `${shortDays[day]}/${date}/ ${month}/ ${year}`;
