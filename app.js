@@ -55,11 +55,11 @@ function clock() {
   }
   console.log(day);
 
-  let time = `${hours}: ${minutes}: ${seconds}: ${period}`
- let dayDate =  `${shortDays[day]}/${date}/ ${month}/ ${year}`
- let dev = "Developed by AMC Tech";
+  let time = `${hours}: ${minutes}: ${seconds}: ${period}`;
+  let dayDate = `${shortDays[day]}/${date}/ ${month}/ ${year}`;
+  let dev = "Developed by AMC Tech";
 
- document.querySelector("h3").innerHTML=time
+  document.querySelector("h3").innerHTML = time;
   document.querySelector("#para1").innerHTML = dayDate;
   document.querySelector("#para2").innerHTML = dev;
 }
