@@ -3,16 +3,17 @@ body {
   overflow: hidden;
 }
 
-h3{
+h3,
+#para1,
+#para2 {
+  text-align: center;
+  margin: 30px;
+}
+
+h3 {
   font-weight: 900;
 }
 
-#para2{
-  font-weight: 100;
-
-}
-
-#clock {
 #clock {
   display: flex;
   justify-content: center;
@@ -24,17 +25,15 @@ h3{
   border-radius: 20px;
   margin: 60px auto;
   flex-direction: column;
-  gap: 15px;
-}
-  color: black;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 10px 10px 30px black;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 60px;
+  font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 8px;
+}
+#para1 {
+  font-weight: 600;
+}
+
+#para2 {
+  font-weight: 100;
 }
 
 @media (max-width: 768px) {
@@ -48,7 +47,6 @@ h3{
     align-items: center;
     width: 80%;
     height: 60vh;
-    box-shadow: 3px 3px 20px black;
     background-color: #ffff;
     border-radius: 20px;
     margin: 60px auto;
@@ -62,5 +60,11 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     padding: 8px;
+    h3,
+    #para1,
+    #para2 {
+      text-align: center;
+      margin: 20px;
+    }
   }
 }
